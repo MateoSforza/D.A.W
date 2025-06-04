@@ -38,6 +38,8 @@ body{
 
 .btn-login button:hover{
     background-color: #002276;
+    padding: 1rem;
+    text-align: center;
 }
 
 .logo{
