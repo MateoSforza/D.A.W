@@ -20,6 +20,16 @@ body{
     position: relative;
 }
 
+.logo{
+    text-align: center;
+    width: 100%;
+}
+
+.logo-header{
+    max-height: 50px;
+    width: auto;
+}
+
 .btn-login{
     position: absolute;
     right: 0;
@@ -38,17 +48,6 @@ body{
 
 .btn-login button:hover{
     background-color: #002276;
-}
-
-.logo{
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    width: 100%;
-}
-
-.tycsports-blue{
-    color: #0033a0;
 }
 
 .contenedor{
