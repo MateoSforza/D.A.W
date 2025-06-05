@@ -29,10 +29,21 @@ body{
     width: auto;
 }
 
+.icon-notificaciones {
+    font-size: 1.3rem;
+    margin-right: 8px;
+    color: #0033a0;
+    vertical-align: middle;
+}
+
+
 .btn-login{  
     position: absolute;
     right: 0;
     padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .btn-login button{
@@ -54,10 +65,52 @@ body{
     padding: 8px 18px;
 }
 
-.contenedor{
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+.menu{
+    margin-top: 1rem;
+}
+
+.menu-links{
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-links li{
+    margin: 0.5rem 0;
+}
+
+.menu-links a{
+    text-decoration: none;
+    color: #0033a0;
+    font-weight: bold;
+}
+
+.hamburguesa{
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.noticias{
+    flex: 1;
+}
+
+.publicidad{
+    display: block;
+    flex: 1;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
 }
 
 .breadcrumb{
@@ -67,7 +120,6 @@ body{
 }
 
 .titulo-noticia{
-    font-family: "Albert Sans", sans-serif;
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -80,11 +132,9 @@ body{
 }
 
 .bajada2{
-    font-family: "Albert Sans", sans-serif;
     font-size: 13px;
     color: #7b7b7b;
     margin-bottom: 130px;
-    border-radius: 8px;;
 }
 
 .fecha{
@@ -116,7 +166,7 @@ article{
     background-color: #fff;
     color: #1c1c1c;
     text-decoration: none;
-    border-style: solid;
+    border: 2px solid #1c1c1c;
     border-radius: 6px;
     font-weight: bold;
     transition: background-color 0.3s;
@@ -141,6 +191,11 @@ article{
 
 .enlace-original a:hover{
     background-color: #002276;
+}
+
+.publicidad img{
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .footer-tyc{
@@ -172,6 +227,81 @@ article{
 .redes-sociales a img:hover{
     opacity: 1;
 }
+
+.footer-links{
+    margin-top: 10px;
+    font-size: 0.85rem;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #0033a0;
+    margin: 0 5px;
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+.suscripcion {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.suscripcion h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #0033a0;
+}
+
+.suscripcion form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.suscripcion input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.suscripcion button {
+    padding: 10px 20px;
+    background-color: #0033a0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.video-noticia {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.video-noticia video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.video-noticia iframe,
+.video-noticia video {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
 
 @media (max-width: 768px){
     .contenedor{
@@ -221,8 +351,7 @@ article{
     }
 
     .btn-login .icon-person {
-        display: inline-block;
-        font-size: 1.2rem; /* Ajusta el tamaño del ícono si es necesario */
+        font-size: 1.2rem;
     }
 
     .btn-login .text-ingresar {
@@ -238,5 +367,46 @@ article{
     .btn-login{
         right: 1rem;
         padding-right: 0;
+    }
+}
+
+@media (min-width: 768px){
+    .suscripcion form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .suscripcion input[type="email"] {
+        margin-right: 10px;
+        width: 300px;
+    }
+
+    .layout{
+        flex-direction: row;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .noticias{
+        flex: 2;
+    }
+
+    .publicidad{
+        flex: 1;
+        display: block;
+    }
+
+    .menu-links{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .hamburguesa{
+        display: none;
+    }
+
+    .menu-links li{
+        margin: 0;
     }
 }
