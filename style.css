@@ -115,6 +115,12 @@ body{
     margin-right: 0;
 }
 
+.publicidad img {
+    display: block;
+    width: 100%;
+    margin: 0 0 1rem 0; /* Solo margen inferior */
+}
+
 .breadcrumb{
     font-size: 0.9rem;
     color: #666;
