@@ -30,7 +30,7 @@ body{
 }
 
 .icon-notificaciones {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-right: 8px;
     color: #0033a0;
     vertical-align: middle;
@@ -355,7 +355,7 @@ article{
     }
 
     .logo-header {
-        max-height: 40px;
+        max-height: 30px;
     }
 
     .btn-login .icon-person {
