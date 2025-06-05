@@ -111,6 +111,8 @@ body{
     position: sticky;
     top: 20px;
     align-self: flex-start;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 .breadcrumb{
@@ -385,6 +387,7 @@ article{
         flex-direction: row;
         max-width: 1200px;
         margin: auto;
+        padding-right: 0;
     }
 
     .noticias{
