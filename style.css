@@ -1,0 +1,421 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #222;
+}
+
+.header-tyc{
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.header-content{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo-header{
+    max-height: 50px;
+    width: auto;
+}
+
+.icon-notificaciones {
+    font-size: 1rem;
+    margin-right: 8px;
+    color: #0033a0;
+    vertical-align: middle;
+}
+
+
+.btn-login{  
+    position: absolute;
+    right: 0;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-login button{
+    padding: 8px 16px;
+    background-color: #0033a0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-login button:hover{
+    background-color: #002276;
+    padding: 8px 18px;
+}
+
+.menu{
+    margin-top: 1rem;
+}
+
+.menu-links{
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-links li{
+    margin: 0.5rem 0;
+}
+
+.menu-links a{
+    text-decoration: none;
+    color: #0033a0;
+    font-weight: bold;
+}
+
+.hamburguesa{
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.noticias{
+    flex: 1;
+}
+
+.publicidad{
+    display: block;
+    flex: 1;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.publicidad img {
+    display: block;
+    width: 100%;
+    margin: 0 0 1rem 0; /* Solo margen inferior */
+}
+
+.breadcrumb{
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.titulo-noticia{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.bajada{
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 50px;
+}
+
+.bajada2{
+    font-size: 13px;
+    color: #7b7b7b;
+    margin-bottom: 130px;
+}
+
+.fecha{
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.imagen-principal{
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.contenido p{
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+article{
+    margin-bottom: 200px;
+}
+
+.btn-nba{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #1c1c1c;
+    text-decoration: none;
+    border: 2px solid #1c1c1c;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-bottom: 100px;
+}
+
+.enlace-original{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.enlace-original a{
+    display: inline-block;
+    background-color: #0033a0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.enlace-original a:hover{
+    background-color: #002276;
+}
+
+.publicidad img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.footer-tyc{
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.logo-footer{
+    height: 40px;
+}
+
+.redes-sociales a img{
+    width: 24px;
+    margin: 0 5px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.redes-sociales a img:hover{
+    opacity: 1;
+}
+
+.footer-links{
+    margin-top: 10px;
+    font-size: 0.85rem;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #0033a0;
+    margin: 0 5px;
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+.suscripcion {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.suscripcion h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #0033a0;
+}
+
+.suscripcion form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.suscripcion input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.suscripcion button {
+    padding: 10px 20px;
+    background-color: #0033a0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.video-noticia {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.video-noticia video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.video-noticia iframe,
+.video-noticia video {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+
+@media (max-width: 768px){
+    .contenedor{
+        padding: 0 10px;
+    }
+
+    .header-content{
+        padding: 0 1rem;
+    }
+
+    .titulo-noticia{
+        font-size: 32px;
+    }
+
+    .bajada{
+        font-size: 0.95rem;
+    }
+
+    .bajada2{
+        font-size: 0.8rem;
+        margin-bottom: 60px;
+    }
+
+    .imagen-principal{
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    aside{
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .btn-nba{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .breadcrumb{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .logo-header {
+        max-height: 30px;
+    }
+
+    .btn-login .icon-person {
+        font-size: 1.2rem;
+    }
+
+    .btn-login .text-ingresar {
+        display: none;
+    }
+
+    .btn-login button {
+        padding: 8px;
+        width: auto;
+        min-width: 32px;
+    }
+
+    .btn-login{
+        right: 1rem;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 768px){
+    .suscripcion form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .suscripcion input[type="email"] {
+        margin-right: 10px;
+        width: 300px;
+    }
+
+    .layout{
+        flex-direction: row;
+        max-width: 1200px;
+        margin: auto;
+        padding-right: 0;
+    }
+
+    .noticias{
+        flex: 2;
+    }
+
+    .publicidad{
+        flex: 1;
+        display: block;
+    }
+
+    .menu-links{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .hamburguesa{
+        display: none;
+    }
+
+    .menu-links li{
+        margin: 0;
+    }
+}
