@@ -443,10 +443,6 @@ form input {
         flex-direction: row;
         justify-content: center;
     }
-    .suscripcion input[type="email"] {
-        margin-right: 10px;
-        width: 300px;
-    }
 
 
     .layout {
