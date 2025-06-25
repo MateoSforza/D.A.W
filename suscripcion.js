@@ -163,15 +163,40 @@ asignarValidacion("dni", validarDNI);
 
 document.getElementById("formulario-suscripcion").addEventListener("submit", function (e) {
     e.preventDefault();
-    var valido = validarNombre() & validarEmail() & validarContrasena() & validarRepetirContrasena() &
-                validarEdad() & validarTelefono() & validarDireccion() & validarCiudad() &
-                validarCP() & validarDNI();
 
-    if (valido) {
-    alert("Formulario enviado con éxito ✅\\n\\nNombre: " + document.getElementById("nombre").value);
-    } else {
-    alert("Hay errores en el formulario ❌");
+    var valido = validarNombre() & validarEmail() & validarContrasena() & validarRepetirContrasena() &
+    validarEdad() & validarTelefono() & validarDireccion() & validarCiudad() & validarCP() & validarDNI();
+
+    if (!valido) {
+        mostrarModal("❌ Hay errores en el formulario");
+        return;
     }
+
+    var datos={
+        nombre: document.getElementById("nombre").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        contrasena: document.getElementById("contrasena").value,
+        edad: document.getElementById("edad").value.trim(),
+        telefono: document.getElementById("telefono").value.trim(),
+        direccion: document.getElementById("direccion").value.trim(),
+        ciudad: document.getElementById("ciudad").value.trim(),
+        codigoPostal: document.getElementById("codigo-postal").value.trim(),
+        dni: document.getElementById("dni").value.trim()
+    }
+
+    var queryParams = new URLSearchParams(datos).toString();
+
+    var url = "https://curso-dev-2021.herokuapp.com/newsletter?" + queryParams;
+
+    fetch(url)
+    .then(response=> response.json())
+    .then(data => {
+        mostrarModal("✅ Suscripción exitosa.\nDatos reecibidos:\n" + JSON.stringify(data, null, 2));
+        localStorage.setItem("datosFormulario", JSON.stringify(datos));
+    })
+    .catch(error => {
+            mostrarModal("❌ Error en el envío: " + error.message);
+        });
 });
 
 // BONUS: título HOLA nombre en vivo
@@ -180,4 +205,15 @@ document.getElementById("nombre").addEventListener("keydown", function () {
 });
 document.getElementById("nombre").addEventListener("focus", function () {
     document.getElementById("titulo-suscripcion").textContent = "HOLA " + this.value;
+});
+
+function mostrarModal(mensaje) {
+    var modal = document.getElementById("modal");
+    var mensajeModal = document.getElementById("mensaje-modal");
+    mensajeModal.textContent = mensaje;
+    modal.classList.remove("oculto");
+}
+
+document.getElementById("cerrar-modal").addEventListener("click", function () {
+    document.getElementById("modal").classList.add("oculto");
 });
