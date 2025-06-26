@@ -164,7 +164,7 @@ asignarValidacion("dni", validarDNI);
 document.getElementById("formulario-suscripcion").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    var valido = validarNombre() && validarEmail() && validarContrasena() && validarRepetirContrasena() && validarEdad() && validarTelefono() && validarDireccion() && validarCiudad() && validarCP() && validarDNI();
+    var valido = validarNombre() & validarEmail() & validarContrasena() & validarRepetirContrasena() & validarEdad() & validarTelefono() & validarDireccion() & validarCiudad() & validarCP() & validarDNI();
 
     if (!valido) {
         mostrarModal("❌ Hay errores en el formulario");
