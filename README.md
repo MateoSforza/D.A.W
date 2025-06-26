@@ -5,8 +5,8 @@
 
 
 
-El formulario de suscripción implementado en este trabajo está diseñado para enviar los datos mediante una solicitud HTTP GET al servidor https://curso-dev-2021.herokuapp.com/newsletter.
-Sin embargo, actualmente el servidor se encuentra fuera de servicio y Heroku responde con el mensaje: “no such app”.
+El formulario de suscripción implementado en este trabajo está diseñado para enviar los datos mediante una solicitud HTTP GET al servidor:
+**https://jsonplaceholder.typicode.com/**
 
 A pesar de esto, el formulario cumple con todos los requisitos:
   Validación de campos en tiempo real (blur/focus).
@@ -15,5 +15,3 @@ A pesar de esto, el formulario cumple con todos los requisitos:
   Uso de localStorage para guardar datos exitosos.
   Diseño responsive con distribución en columnas (PC) y apilado (móvil).
   Estética coherente con el diario.
-
-Cuando el servidor vuelva a estar disponible, el envío de datos funcionará automáticamente sin necesidad de modificaciones adicionales.
