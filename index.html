@@ -1,0 +1,34 @@
+<! DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Personajes de Rick y Morty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Explorador de Personajes de Rick y Morty</h1>
+</header>
+
+<main>
+    <section id="filtros">
+        <input type="text" id="filtro-nombre" placeholder="Nombre">
+        <input type="text" id="filtro-estado" placeholder="Estado (vivo, muerto, desconocido)">
+        <input type="text" id="filtro-especie" placeholder="Especie">
+        <input type="text" id="filtro-tipo" placeholder="Tipo">
+        <input type="text" id="filtro-genero" placeholder="Género (masculino, femenino, sin género, desconocido)">
+        <button id="btn-filtrar">Buscar con filtros</button>
+    </section>
+
+    <section>
+        <button id="ver-todos">Ver todos los personajes</button>
+    </section>
+
+    <section id="resultado"></section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
