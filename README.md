@@ -1,4 +1,4 @@
-# Buscaminas Web
+# Buscaminas
 
 Proyecto final para la materia **Desarrollo y Arquitecturas Web 2025**.
 
