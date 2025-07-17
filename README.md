@@ -6,7 +6,7 @@ Este proyecto es una versión web interactiva del clásico juego Buscaminas, des
 
 ## Demo
 
-- [pages](https://github.com/MateoSforza/D.A.W/Buscaminas_TP_Final/index.html) — Juega directamente online
+- [pages](https://github.com/MateoSforza/D.A.W/blob/Buscaminas_TP_Final/index.html) — Juega directamente online
 - [original](https://minesweeper.online/es/) — Página de inspiración
 
 ## Características principales
